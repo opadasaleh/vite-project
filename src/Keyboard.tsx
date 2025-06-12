@@ -1,3 +1,5 @@
+import './Keyboard.css';
+
 const KEYS = [
     "a",
     "b",
@@ -31,7 +33,7 @@ export function Keyboard() {
     return <div className="grid grid-cols-[repeat(auto-fit,minmax(75px,1fr))] gap-[1rem]">
         {KEYS.map(key => {
             return (
-                <button key={key}>{key}</button>
+                <button className="btn" key={key}>{key}</button>
        )
    })} 
   </div>
