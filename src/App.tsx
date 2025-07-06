@@ -18,8 +18,9 @@ function App() {
       </div>
       <HangmanDrawing />
       <HangmanWord />
-      <div className="self-stretch">
-      <Keyboard /> </div>
+      <div className="self-stretch ">
+        <Keyboard />
+      </div>
     </div>
   )
 }

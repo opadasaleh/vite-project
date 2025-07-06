@@ -5,7 +5,7 @@
 
 
 /* Use Tailwind utility classes instead of custom CSS */
-.btn {
+/* .btn {
   background-color: #3490dc;
   color: white;
   padding: 0.5rem 1rem;
@@ -16,4 +16,26 @@
 }
 .btn:hover {
   background-color: #0dff00;
+} */
+@import "tailwindcss";
+
+
+
+
+@layer utilities {
+
+  /* Add your .btn and other stuff here*/
+  .btn.active {
+    @apply bg-green-500 text-white;
+  }
+  .btn.inactive{
+    @apply opacity-30;
+  }
+  .btn {
+    @apply w-full border-3 border-solid border-black bg-none aspect-square text-4xl uppercase p-2 font-bold cursor-pointer text-black
+  }
+
+  .btn:hover, .btn:focus {
+    @apply bg-blue-600
+  }
 }

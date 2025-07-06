@@ -33,9 +33,9 @@ export function Keyboard() {
     return <div className="grid grid-cols-[repeat(auto-fit,minmax(75px,1fr))] gap-[1rem]">
         {KEYS.map(key => {
             return (
-                <button className="btn" key={key}>{key}</button>
+                <button className="disabled:btn btn "  key={key}>{key}</button>
        )
    })} 
   </div>
     
-}
+} 

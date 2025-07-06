@@ -2,10 +2,3 @@
 
 
 
-
-@layer utilities {
-    /* Add your .btn and other stuff here*/
-    .btn {
-            @apply w-full border-3 border-solid border-black bg-none aspect-square text-4xl uppercase p-2 font-bold cursor-pointer text-black
-        }
-}
